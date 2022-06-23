@@ -1,8 +1,8 @@
-const express = require('express')
-const app = express()
+var express = require('express')
+var app = express()
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/', function (req, res) {
+res.sendFile(__dirname + '/main.html');
 })
 
-app.listen(5000)
+app.listen(3000);
